@@ -2,7 +2,7 @@
     "name": "Better xkcd",
     "description": "An alternative xkcd viewer, optimized for browsing them mindlessly!",
     "version": "1.0.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
 
     "content_scripts": [
         {
