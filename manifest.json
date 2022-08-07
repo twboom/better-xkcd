@@ -1,12 +1,23 @@
 {
     "name": "Better xkcd",
     "description": "An alternative xkcd viewer, optimized for browsing them mindlessly!",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 2,
 
     "content_scripts": [
         {
             "matches": ["https://xkcd.com/*"],
+            "exclude_matches": [
+                "https://xkcd.com/archive/",
+                "https://xkcd.com/about/",
+                "https://xkcd.com/atom.xml/",
+                "https://xkcd.com/newsletter/",
+                "https://xkcd.com/books/",
+                "https://xkcd.com/what-if/",
+                "https://xkcd.com/what-if-2/",
+                "https://xkcd.com/thing-explainer/",
+                "https://xkcd.com/how-to/"
+            ],
             "js": [
                 "src/fullscreen/buttons.js",
                 "src/fullscreen/viewer.js"
