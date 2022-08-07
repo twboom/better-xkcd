@@ -1,0 +1,18 @@
+{
+    "name": "Better xkcd",
+    "description": "An alternative xkcd viewer, optimized for browsing them mindlessly!",
+    "version": "0.1",
+    "manifest_version": 3,
+
+    "content_scripts": [
+        {
+            "matches": ["https://xkcd.com/*"],
+            "js": [
+                "viewer.js"
+            ],
+            "css": [
+                "fullscreenComic.css"
+            ]
+        }
+    ]
+}
