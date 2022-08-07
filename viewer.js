@@ -15,7 +15,7 @@ function toggle() {
     if (toggleButton.classList.contains('fullscreen')) {
         toggleButton.innerHTML = fsExit;
     } else {
-        toggleButton.innerHTML = fsEnter
+        toggleButton.innerHTML = fsEnter;
     };
 };
 
