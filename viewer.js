@@ -1,16 +1,26 @@
 // Get the box with the comics
 const comicContainer = document.getElementById("middleContainer");
 
+// Create the toggle button
+const toggleButton = document.createElement('button');
+toggleButton.id = 'fullscreen-toggle'
+toggleButton.innerHTML = fsEnter;
+toggleButton.addEventListener('click', toggle);
+
 // Toggle function
 function toggle() {
-    document.body.classList.toggle("fullscreen")
-}
+    document.body.classList.toggle("fullscreen");
+    toggleButton.classList.toggle("fullscreen");
+
+    if (toggleButton.classList.contains('fullscreen')) {
+        toggleButton.innerHTML = fsExit;
+    } else {
+        toggleButton.innerHTML = fsEnter
+    };
+};
 
 // Initiation function
 function init() {
-    const toggleButton = document.createElement('button');
-    toggleButton.innerText = 'Toggle fullscreen';
-    toggleButton.addEventListener('click', toggle);
     comicContainer.appendChild(toggleButton);
 };
 
