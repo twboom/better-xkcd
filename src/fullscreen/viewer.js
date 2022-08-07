@@ -22,6 +22,8 @@ function toggle() {
 // Initiation function
 function init() {
     comicContainer.appendChild(toggleButton);
+    const fullscreen = ((new URL(document.location)).searchParams.get('fullscreen') === 'true') ? true : false;
+    if (fullscreen) { toggle() };
 };
 
 if (comicContainer) {
