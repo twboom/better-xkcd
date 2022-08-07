@@ -8,12 +8,12 @@
         {
             "matches": ["https://xkcd.com/*"],
             "js": [
-                "buttons.js",
-                "viewer.js"
+                "src/fullscreen/buttons.js",
+                "src/fullscreen/viewer.js"
             ],
             "css": [
-                "fullscreenComic.css",
-                "button.css"
+                "src/fullscreen/fullscreenComic.css",
+                "src/fullscreen/button.css"
             ]
         }
     ]
